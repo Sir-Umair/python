@@ -1,0 +1,13 @@
+marks=[]
+A=input("ENTER MARKS")
+marks.append(A)
+B=input("ENTER MARKS")
+marks.append(B)
+C=input("ENTER MARKS")
+marks.append(C)
+D=input("ENTER MARKS")
+marks.append(D)
+E=input("ENTER MARKS")
+marks.append(E)
+marks.sort()
+print(marks)
