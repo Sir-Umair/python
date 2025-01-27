@@ -1,13 +1,15 @@
-# ch#3 practice set p#1 python
-name=input("ENTER THE NAME: ")
-print(f"GOOD AFTER NOON:{name}")
-letter = '''Dear <|Name|>, 
-You are selected! 
-<|Date|> '''
-print(letter.replace(" <|Name|>","UMAIR").replace("<|Date|>","11/1/2025"))
-name="umair  is here"
-print(name.capitalize())
-print(name.find("  "))
-print(name.replace("  "," "))
-name="DEAR UMAIR\n THIS\t PYTHON\a COURSE \'IS\' \"VERY HELPFUL "
-print(name)
+name="umair"
+name2=len(name)
+print(name2)
+print(name[0:2])
+print(name[-5:-3])
+print(name[1])
+ab="umair i\ns a\b good\a bo\t\by"
+print(ab)
+print(name.replace('a','vfg'))
+print(name.upper())
+print(name.lower())
+print(name.encode())
+print(name.startswith('u'))
+print(name.endswith('r'))
+print(name.rzfill(56))
