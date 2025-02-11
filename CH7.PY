@@ -1,34 +1,11 @@
-Your handwritten program appears to be:
 
 L = ["a", "b", "c", "d"]
 
 def ajc():
-    for i in range(len(L)):  # Looping using len(L)
-        print(L[i])  # Printing each element by index
+    for i in range(len(L)):
+        print(L[i])
 
 ajc()
-
-Explanation:
-
-L is a list containing ["a", "b", "c", "d"].
-
-len(L) returns 4, so range(len(L)) generates [0, 1, 2, 3].
-
-The for loop iterates over these indices, accessing L[i] and printing the elements.
-
-
-Expected Output:
-
-a
-b
-c
-d
-
-If you want to include the index in the output, modify the print statement:
-
-print(f"Index {i}: {L[i]}")
-
-Let me know if you need changes!
 
 # i=0
 # while(i<6):
