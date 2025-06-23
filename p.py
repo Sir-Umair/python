@@ -58,7 +58,53 @@ q.enque(20)
 q.enque(30)
 print(q.peek())
 
-        
+class Que:
+    def __init__(self, capacity):
+        self.queue = []
+        self.capacity = capacity  # maximum size of queue
+
+    def enque(self, item):
+        if self.is_full():
+            print("Queue is full. Cannot enqueue.")
+        else:
+            self.queue.append(item)
+            print(f"Enqueued: {item}")
+
+    def is_empty(self):
+        return len(self.queue) == 0
+
+    def is_full(self):
+        return len(self.queue) == self.capacity
+
+    def deque(self):
+        if self.is_empty():
+            print("Queue is empty. Cannot dequeue.")
+            return None
+        return self.queue.pop(0)
+
+    def peek(self):
+        if self.is_empty():
+            return None
+        return self.queue[0]
+
+# Testing the queue
+q = Que(3)  # capacity = 3
+q.enque(10)
+q.enque(20)
+q.enque(30)
+q.enque(40)  # Should print "Queue is full"
+
+print("Front of the queue:", q.peek())
+print("Dequeued:", q.deque())
+print("Front after dequeue:", q.peek())
+q.enque(40)  # Now there's space
+
+class PQ:
+    def __init__(self): self.q = []
+    def enqueue(self, item, prio): self.q.append((prio, item)); self.q.sort()
+    def dequeue(self): return self.q.pop(0)[1] if self.q else None
+    def peek(self): return self.q[0][1] if self.q else None
+
 
 
 
