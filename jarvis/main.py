@@ -41,7 +41,7 @@ def processcommands(command):
 
          print("i can only open google, youtube, github and play music from my library")
 # def aiProcess(command):
-#     client = OpenAI(api_key="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",
+#     client = OpenAI(api_key="",
 #     )
 
 #     completion = client.chat.completions.create(
